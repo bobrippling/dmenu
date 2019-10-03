@@ -18,7 +18,7 @@ chosen=$(
 
 if test "$chosen" = $cachebuster
 then
-	dmenu_run
+	dmenu_run "$@"
 else
 	echo "$chosen" | sh
 fi
